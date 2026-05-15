@@ -1,0 +1,89 @@
+/* Page background and centering for the profile card */
+body {
+  /* light blue page color creates a soft background */
+  background-color: lightblue;
+  /* center all text inside the body by default */
+  text-align: center;
+  /* use Roboto font loaded from Google Fonts, fallback to sans-serif */
+  font-family: 'Roboto', sans-serif;
+  /* use flexbox to center the profile card horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* make the body fill the full browser height */
+  min-height: 100vh;
+  /* remove default browser margin so centering works cleanly */
+  margin: 0;
+}
+
+/* White card container with border, rounded corners, and padding */
+.profile-card {
+  /* white background makes the card stand out from page background */
+  background-color: white;
+  /* subtle gray border gives a simple card outline */
+  border: 1px solid #ccc;
+  /* rounded corners make the card look softer */
+  border-radius: 12px;
+  /* light shadow gives the card a small lifted effect */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  /* padding creates space inside the card around the text */
+  padding: 32px 24px;
+  /* limit the card width so it does not stretch too wide on large screens */
+  max-width: 500px;
+  /* let the card shrink a little on small screens */
+  width: 90%;
+}
+
+/* Profile image sizing so it stays within the card width */
+.profile-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 24px;
+  border-radius: 12px;
+}
+
+/* Remove bullets and add spacing for favorite website links */
+.favorite-sites {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+}
+
+.favorite-sites li {
+  margin-bottom: 12px;
+}
+
+.favorite-sites li:last-child {
+  margin-bottom: 0;
+}
+
+/* Main name heading style */
+h1 {
+  /* larger font size makes the name stand out */
+  font-size: 40px;
+  /* add a small space below the heading */
+  margin: 0 0 8px;
+  /* dark blue color is easy to read and matches the theme */
+  color: darkblue;
+}
+
+/* Role subtitle style */
+h2 {
+  /* medium font size for the role under the name */
+  font-size: 26px;
+  /* space below the subtitle separates it from the paragraph */
+  margin: 0 0 20px;
+  /* gray color keeps the subtitle softer than the heading */
+  color: slategray;
+}
+
+/* Paragraph text style with spacing and easy reading */
+p {
+  /* normal reading size for body text */
+  font-size: 18px;
+  /* line height improves readability for multiple lines */
+  line-height: 1.6;
+  /* remove default paragraph margin so spacing is controlled by design */
+  margin: 0;
+}
